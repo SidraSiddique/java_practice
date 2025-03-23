@@ -1,7 +1,7 @@
 // java syntax
 public  class Main{
     public static void main(String[]args){
-    system.out.println("hello world");
+    System.out.println("hello world");
     }
 }
 //variables in java:
@@ -11,3 +11,18 @@ public  class Main{
         System.out.println(number);
     }
 }
+// example:student info:
+public  class Main{
+    public static void main(String[]args){
+        String name="Asad";
+        int id=001;
+        String section="afternoon";
+        String degree="data science";
+        Float gpa=3.87f;
+        System.out.println("name:"+name);
+        System.out.println("id:"+id);
+        System.out.println("section:"+section);
+        System.out.println("degree:"+degree);
+        System.out.println("gpa:"+gpa);
+    }
+}   
