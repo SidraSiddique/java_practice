@@ -48,3 +48,16 @@ public class main{
 
     }
 }
+
+//array example:
+public class Main {
+    public static void main(String[] args) {
+        String[] num = {"1", "2", "3", "4"}; 
+        int max = Integer.MIN_VALUE; 
+        for (int i = 0; i < num.length; i++) {
+            int Number = Integer.parseInt(num[i]); 
+            max = Math.max(max, Number);
+        }
+        System.out.println("Maximum value: " + max);
+    }
+}
