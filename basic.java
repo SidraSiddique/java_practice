@@ -37,3 +37,14 @@ public class main{
 
     }
 }
+
+// 2nd example:
+public class main{
+    public static void main(String[]args){
+        double mynum=99.6d;
+        int number=(int)mynum;
+        System.out.println(mynum);
+        System.out.println(number);
+
+    }
+}
