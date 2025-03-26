@@ -26,3 +26,12 @@ public  class Main{
         System.out.println("gpa:"+gpa);
     }
 }   
+
+//type casting
+public class main{
+    public static void main(String[]args){
+        int mynum=9;
+        double number=mynum;
+        
+    }
+}
