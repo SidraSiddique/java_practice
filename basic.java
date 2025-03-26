@@ -32,6 +32,8 @@ public class main{
     public static void main(String[]args){
         int mynum=9;
         double number=mynum;
-        
+        System.out.println(mynum);
+        System.out.println(number);
+
     }
 }
