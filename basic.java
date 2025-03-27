@@ -61,3 +61,5 @@ public class Main {
         System.out.println("Maximum value: " + max);
     }
 }
+//or without coverting string to int:
+public class Main {
