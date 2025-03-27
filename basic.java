@@ -63,4 +63,5 @@ public class Main {
 }
 //or without coverting string to int:
 public class Main {
-      public static void main(String[] args) {
+    public static void main(String[] args) {
+    int[] num = {1, 2, 3, 4, 5};
