@@ -69,3 +69,7 @@ public class Main {
        for (int i = 1; i < num.length; i++) {
             max = Math.max(max, num[i]);
         }
+        System.out.println("Maximum value: " + max);
+    }
+}
+
