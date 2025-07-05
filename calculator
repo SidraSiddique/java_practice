@@ -5,3 +5,18 @@ public class CommandLineCalculator {
             System.out.println("Operations: add, sub, mul, div");
             return;
         }
+String operation = args[0];
+        double result;
+
+        try {
+            result = Double.parseDouble(args[1]);
+
+            for (int i = 2; i < args.length; i++) {
+                double num = Double.parseDouble(args[i]);
+
+                switch (operation.toLowerCase()) {
+                    case "add":
+                        result += num;
+                        break;
+                    case "sub":
+                        result -= num;
