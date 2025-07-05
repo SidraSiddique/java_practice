@@ -1,0 +1,7 @@
+public class CommandLineCalculator {
+    public static void main(String[] args) {
+        if (args.length < 3) {
+            System.out.println("Usage: java CommandLineCalculator <operation> <num1> <num2> [<num3> ...]");
+            System.out.println("Operations: add, sub, mul, div");
+            return;
+        }
