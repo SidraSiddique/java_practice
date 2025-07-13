@@ -29,3 +29,20 @@ public static String determineGrade(double average) {
             System.out.println("Please provide the number of students as a command line argument.");
             return;
         }
+int numStudents = Integer.parseInt(args[0]);
+        Scanner scanner = new Scanner(System.in);
+
+        String[] studentNames = new String[numStudents];
+        int[][] studentMarks = new int[numStudents][5];
+
+        // Input loop
+        for (int i = 0; i < numStudents; i++) {
+            System.out.print("Enter name for student " + (i + 1) + ": ");
+            studentNames[i] = scanner.nextLine();
+
+            System.out.println("Enter 5 marks for " + studentNames[i] + ":");
+            for (int j = 0; j < 5; j++) {
+                studentMarks[i][j] = scanner.nextInt();
+            }
+            scanner.nextLine(); // Clear the newline character
+        }
