@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class StudentGrades {
+    public static int calculateTotal(int[] marks) {
+        int total = 0;
+        for (int mark : marks) {
+            total += mark;
+        }
+        return total;
+    }
+    public static double calculateAverage(int total, int numSubjects) {
+        return (double) total / numSubjects;
+    }
