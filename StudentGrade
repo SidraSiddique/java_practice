@@ -46,3 +46,20 @@ int numStudents = Integer.parseInt(args[0]);
             }
             scanner.nextLine(); // Clear the newline character
         }
+System.out.println("\nResults:");
+        for (int i = 0; i < numStudents; i++) {
+            int total = calculateTotal(studentMarks[i]);
+            double average = calculateAverage(total, 5);
+            String grade = determineGrade(average);
+
+            System.out.println("Student: " + studentNames[i]);
+            System.out.println("Total: " + total);
+            System.out.printf("Average: %.1f\n", average);
+            System.out.println("Grade: " + grade);
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
+
