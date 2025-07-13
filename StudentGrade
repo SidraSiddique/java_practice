@@ -23,7 +23,6 @@ public static String determineGrade(double average) {
             return "F";
         }
     }
-
     public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("Please provide the number of students as a command line argument.");
@@ -31,15 +30,11 @@ public static String determineGrade(double average) {
         }
 int numStudents = Integer.parseInt(args[0]);
         Scanner scanner = new Scanner(System.in);
-
         String[] studentNames = new String[numStudents];
         int[][] studentMarks = new int[numStudents][5];
-
-        // Input loop
         for (int i = 0; i < numStudents; i++) {
             System.out.print("Enter name for student " + (i + 1) + ": ");
             studentNames[i] = scanner.nextLine();
-
             System.out.println("Enter 5 marks for " + studentNames[i] + ":");
             for (int j = 0; j < 5; j++) {
                 studentMarks[i][j] = scanner.nextInt();
@@ -51,7 +46,6 @@ System.out.println("\nResults:");
             int total = calculateTotal(studentMarks[i]);
             double average = calculateAverage(total, 5);
             String grade = determineGrade(average);
-
             System.out.println("Student: " + studentNames[i]);
             System.out.println("Total: " + total);
             System.out.printf("Average: %.1f\n", average);
