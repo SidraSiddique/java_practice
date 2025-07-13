@@ -10,3 +10,22 @@ public class StudentGrades {
     public static double calculateAverage(int total, int numSubjects) {
         return (double) total / numSubjects;
     }
+public static String determineGrade(double average) {
+        if (average >= 90) {
+            return "A";
+        } else if (average >= 80) {
+            return "B";
+        } else if (average >= 70) {
+            return "C";
+        } else if (average >= 60) {
+            return "D";
+        } else {
+            return "F";
+        }
+    }
+
+    public static void main(String[] args) {
+        if (args.length != 1) {
+            System.out.println("Please provide the number of students as a command line argument.");
+            return;
+        }
